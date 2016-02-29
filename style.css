@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  border: 0;
+  font-family: 'Open Sans';
+}
+.header {
+  background-image: url("warzone.jpg");
+  background-size: cover;
+  padding: 0 100px 0 100px;
+  min-height: 600px;
+  height: auto;
+  text-align: center;
+}
+.header h1 {
+  float: left;
+  display: inline-block;
+  font-family: 'Black Ops One';
+  color: rgb(255, 145, 0);
+  font-size: 60px;
+  font-weight: 300;
+}
+.header nav {
+  float: right;
+}
+.header nav a {
+  color: white;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px;
+}
+.header nav a:hover {
+  background-color: rgba(255, 145, 0, 0.8);
+}
+
+.header p {
+  color: white;
+  font-size: 36px;
+  text-align: center;
+  padding-top: 200px;
+}
+
+#header-button {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 30px;
+  color: white;
+  font-size: 23px;
+  border: white solid 3px;
+  width: 200px;
+}
+#header-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.game-types {
+  padding: 100px 100px 0 100px;
+  background-color: #EEE;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.game-types svg {
+  padding: 50px;
+  width: 100px;
+  height: 100px;
+  border: orange 3px solid;
+  border-radius: 50%;
+}
+.st0 {
+  border: orange 5px solid;
+  background-color: red;
+  fill: orange;
+}
+.game-types h3 {
+  padding: 10px;
+  text-align: center;
+  color: orange;
+  padding-bottom: 150px;
+}
