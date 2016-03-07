@@ -34,7 +34,8 @@
   background-color: rgba(255, 145, 0, 0.8);
 }
 
-.header p {
+.header h3 {
+  font-weight: normal;
   color: white;
   font-size: 36px;
   text-align: center;
@@ -55,9 +56,34 @@
   color: black;
 }
 
+
+.information-section {
+  display: block;
+  padding: 60px 100px 0 100px;
+}
+.information-section div {
+  display: inline-block;
+  float: left;
+}
+.information-section h3 {
+  padding-top: 30px;
+  font-size: 50px;
+  color: orange;
+}
+.information-section p {
+  display: inline-block;;
+  padding-top: 20px;
+  font-size: 24px;
+  color: black;
+}
+.information-section img {
+  height: 500px;
+}
+
 .game-types {
+  display: block;
   padding: 100px 100px 0 100px;
-  background-color: #EEE;
+  background-color: orange;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -66,17 +92,29 @@
   padding: 50px;
   width: 100px;
   height: 100px;
-  border: orange 3px solid;
+  border: white 3px solid;
   border-radius: 50%;
 }
 .st0 {
-  border: orange 5px solid;
-  background-color: red;
-  fill: orange;
+  border: white 5px solid;
+  fill: white;
 }
 .game-types h3 {
   padding: 10px;
   text-align: center;
-  color: orange;
+  color: white;
   padding-bottom: 150px;
+}
+.footer {
+  padding: 30px 100px 30px 100px;
+  min-height:200px;
+  background-color: #111;
+}
+.footer iframe {
+  float: left;
+  padding: 0 30px 0 30px;
+}
+.footer p {
+  color: white;
+  padding-top: 5px;
 }
