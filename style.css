@@ -1,22 +1,37 @@
 * {
   margin: 0;
-  border: 0;
+  padding: 0;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+}
+body {
   font-family: 'Open Sans';
+  font-size: 16px;
+}
+.clearfix:after {
+  content:"";
+  display:block;
+  clear:both;
+}
+div {
+  padding: 0 10vw 0 10vw;
 }
 .header {
   background-image: url("warzone.jpg");
   background-size: cover;
-  padding: 0 100px 0 100px;
-  min-height: 600px;
+  min-height: 100vh;
   height: auto;
   text-align: center;
 }
+.small {
+  min-height: 4em;
+  height: auto;
+}
 .header h1 {
   float: left;
-  display: inline-block;
   font-family: 'Black Ops One';
   color: rgb(255, 145, 0);
-  font-size: 60px;
+  font-size: 3.5em;
   font-weight: 300;
 }
 .header nav {
@@ -25,90 +40,93 @@
 .header nav a {
   color: white;
   font-family: 'Open Sans';
-  font-size: 18px;
-  text-decoration: none;
+  font-size: 1.2em;
   display: inline-block;
-  padding: 20px;
+  padding: 1em;
 }
 .header nav a:hover {
   background-color: rgba(255, 145, 0, 0.8);
 }
-
 .header h3 {
   font-weight: normal;
   color: white;
-  font-size: 36px;
+  font-size: 2em;
   text-align: center;
-  padding-top: 200px;
+  padding-top: 40vh;
 }
-
 #header-button {
   display: inline-block;
-  text-decoration: none;
-  margin-top: 30px;
+  margin: 1em;
+  padding: 0 1em 0 1em;
   color: white;
-  font-size: 23px;
+  font-size: 1.5em;
   border: white solid 3px;
-  width: 200px;
 }
 #header-button:hover {
   background-color: white;
   color: black;
 }
-
-
 .information-section {
-  display: block;
-  padding: 60px 100px 0 100px;
+  min-height: 100vh;
+  height: auto;
+  background-color: #eee;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
 }
-.information-section div {
-  display: inline-block;
-  float: left;
-}
-.information-section h3 {
-  padding-top: 30px;
-  font-size: 50px;
+.information-section h2 {
+  font-size: 3em;
   color: orange;
 }
 .information-section p {
-  display: inline-block;;
-  padding-top: 20px;
-  font-size: 24px;
-  color: black;
+  font-size: 1.5em;
 }
-.information-section img {
-  height: 500px;
-}
-
 .game-types {
-  display: block;
-  padding: 100px 100px 0 100px;
+  min-height: 100vh;
+  height: auto;
   background-color: orange;
+  padding-top: 20px;
   display: flex;
-  flex-direction: row;
+  flex-flow: column;
   justify-content: space-around;
 }
+.game-types p {
+  font-size: 1.5em;
+  color: white;
+  text-indent: 20px;
+}
+/*
+.game-types {
+  min-height: 100vh;
+  height: auto;
+  background-color: orange;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
 .game-types svg {
-  padding: 50px;
-  width: 100px;
-  height: 100px;
+  width: 10vw;
+  height: 10vw;
+  padding: 10px;
   border: white 3px solid;
   border-radius: 50%;
 }
 .st0 {
-  border: white 5px solid;
   fill: white;
 }
 .game-types h3 {
-  padding: 10px;
-  text-align: center;
   color: white;
-  padding-bottom: 150px;
+  text-align: center;
+  font-size: 1.5vw;
 }
+*/
+
 .footer {
-  padding: 30px 100px 30px 100px;
-  min-height:200px;
+  min-height: 250px;
+  height: auto;
   background-color: #111;
+  padding-top: 20px;
 }
 .footer iframe {
   float: left;
@@ -117,4 +135,51 @@
 .footer p {
   color: white;
   padding-top: 5px;
+}
+.details {
+  padding: 100px;
+  background-color: #efefef;
+}
+.details h2 {
+  letter-spacing: 0.05em;
+  display: block;
+  color: orange;
+  font-size: 36px;
+  padding: 0 0 40px 0;
+}
+.details p {
+  float: left;
+  color: black;
+  padding-bottom: 1em;
+  text-indent: 20px;
+  font-size: 21px;
+}
+.details p span {
+  font-weight: bold;
+  padding-left: 20px;
+  color: orange;
+}
+.camping-map {
+  background-image: url("park-map.png");
+  height: 100vh;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.details iframe {
+  float: right;
+}
+form {
+  float: left;
+  font-size: 21px;
+}
+form * {
+  padding: 2px;
+  line-height: 21px;
+  margin: 20px 0 20px 0;
+  outline: solid grey 1px;
+
+}
+form *:focus {
+  outline: solid orange 1px;
 }
